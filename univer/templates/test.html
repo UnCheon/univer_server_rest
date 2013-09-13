@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<title>test</title>	
+	</head>
+	<body>
+		
+		<label>Time Test POST</label><br>
+		<form method="POST" action="/time_test/">
+			<input type="submit" value="time_test POST" /><br>
+		</form>
+		
+		<label>Time Test GET</label><br>
+		<form method="GET" action="/time_test/">
+			<input type="submit" value="time_test GET" /><br>
+		</form>
+		
+		
+		<label>Pedoemter POST API</label><br>
+		<form method="POST" action="/pedometer_raw_data/">
+			serial_number = <input type="text" name="serial_number" id="serial_number" /><br>
+			date_time = <input type="text" name="date_time" id="date_time" /><br>
+			step = <input type="text" name="step" id="step" /><br>
+			active = <input type="text" name="active" id="active" /><br>
+			
+			
+			
+			<input type="submit" value="test" /><br>
+		</form>
+	<br><br>
+		
+		<label>Pedoemter POST Test1</label><br>
+		<form method="POST" action="/pedometer_post_test1/">
+			<input type="text" name="tdata1" id="tdata1" /><br>
+			<input type="submit" value="test" /><br>
+		</form>
+		<br><br>
+		
+		<label>Pedoemter POST Test2</label><br>
+		<form method="POST" action="/pedometer_post_test2/">
+			<input type="text" name="tdata1" id="tdata1" /><br>
+			<input type="text" name="tdata2" id="tdata1" /><br>
+			<input type="submit" value="test" /><br>
+		</form>
+		<br><br>
+
+		
+		<label>login</label><br>
+		<form method="POST" action="/login/">
+			<input type="text" name="username" id="username" /><br>
+			<input type="password" name="password" id="password" /><br>
+			<input type="submit" value="login" /><br>
+		</form>
+		<br><br>
+		
+		<label>chatting</label><br>
+		<form method="POST" action="http://54.248.233.34:3000/join/">
+			<input type="text" name="roomName" id="roomName" /><br>
+			<input type="text" name="is_chatRoom" id="is_chatRoom" /><br>
+			<input type="text" name="chatRoom_id" id="chatRoom_id" /><br>
+			<input type="text" name="to_id" id="to_id" /><br>
+			<input type="text" name="my_id" id="my_id" /><br>
+			<input type="text" name="my_seller" id="my_seller" /><br>
+			<input type="text" name="device_type" id="device_type" /><br>
+			<input type="submit" value="join" /><br>
+		</form>
+		<br><br>
+		
+		
+
+		apns
+		<form method="POST" action="/messages/">
+			<label> other_user_id : </label><input type="text" name="other_user_id" id="other_user_id" /><br>
+			<label> user_id : </label><input type="text" name="user_id" id="user_id" /><br>
+			<label> content : </label><input type="text" name="content" id="content" /><br>
+			<label> seller check : </label><input type="text" name="seller" id="seller" value="1" /><br>
+			<input type="submit" value="send" />
+		</form>
+				<br><br>
+		
+		cache_login_first
+		<form method="POST" action="/login/">
+			<label> username : </label><input type="text" name="username" id="username" /><br>
+			<label> password : </label><input type="password" name="password" id="password" /><br>
+			<input type="submit" value="send" />
+		</form>
+		
+		
+		cache_login_check
+		<form method="POST" action="/login_check/">
+			<label> user_id : </label><input type="text" name="user_id" id="user_id" /><br>
+			<label> content : </label><input type="text" name="value" id="value" /><br>
+			<input type="submit" value="send" />
+		</form>
+		
+
+
+		<br><br>
+		<form method="POST" action="/setMemcache/">
+			<label> key : </label><input type="text" name="key" id="key" /><br>
+			<label> value : </label><input type="text" name="value" id="value" /><br>
+			<input type="submit" value="set" />
+		</form>
+
+
+		<br><br>
+		<form method="POST" action="/getMemcache/">
+			<label> key : </label><input type="text" name="key" id="key" /><br>
+			<input type="submit" value="get" />
+		</form>
+		
+		
+	</body>
+	
+</html>
